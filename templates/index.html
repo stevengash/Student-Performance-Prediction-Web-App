@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='index.css') }}">
+</head>
+<body>
+    <h1>Fill Form</h1>
+    <form method="POST" action="/predict">
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+        </select><br><br>
+        
+        <label for="race">Race/Ethnicity:</label>
+        <select name="race" id="race">
+            <option value="group A">Group A</option>
+            <option value="group B">Group B</option>
+            <option value="group C">Group C</option>
+            <option value="group D">Group D</option>
+            <option value="group E">Group E</option>
+        </select><br><br>
+
+        <label for="parental_education">Parental Education:</label>
+        <select name="parental_education" id="parental_education">
+            <option value="master's degree">master's degree</option>
+            <option value="bachelor's degree">bachelor's degree</option>
+            <option value="associate's degree">associate's degree</option>
+            <option value="some college">some college</option>
+            <option value="high school">high school</option>
+            <option value="some high school"> some high school</option>
+        </select><br><br>
+
+        <label for="lunch">Lunch:</label>
+        <select name="lunch" id="lunch">
+            <option value="standard">Standard</option>
+            <option value="free/reduced">Free/Reduced</option>
+        </select><br><br>
+
+        <label for="test_prep">Test Preparation Course:</label>
+        <select name="test_prep" id="test_prep">
+            <option value="completed">Completed</option>
+            <option value="none">None</option>
+        </select><br><br>
+
+        <label for="math_score">Math Score:</label>
+        <input type="number" name="math_score" id="math_score"><br><br>
+
+        <label for="reading_score">Reading Score:</label>
+        <input type="number" name="reading_score" id="reading_score"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='index.css') }}">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1 style="margin-bottom: -130px;">Prediction Result</h1>
+    <div class="center-container">
+    <label for="predicted_score">Predicted Score:</label>
+<input type="text" id="predicted_score" name="predicted_score" value="{{ prediction }}" readonly style="width: 150px;">
+    </div>
+</body>
+</html>
