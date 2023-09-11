@@ -71,6 +71,6 @@ urllib3==2.0.4
 webencodings==0.5.1
 Werkzeug==2.3.7
 wordcloud==1.9.2
-xarray==2023.8.0
+xarray
 xyzservices==2023.7.0
 zipp==3.16.2
