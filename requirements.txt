@@ -11,7 +11,7 @@ colorcet==3.0.1
 contourpy==1.1.0
 cramjam==2.7.0
 cycler==0.11.0
-dask==2023.9.0
+dask
 datashader==0.15.2
 datashape==0.5.2
 fastparquet==2023.8.0
